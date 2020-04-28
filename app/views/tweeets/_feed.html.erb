@@ -1,0 +1,25 @@
+<div class="column is-half">
+<article class="media-box">
+    <div class="media-left">
+        <figure class="image is-64x64"><img src="https://bulma.io/images/placeholders/64x64.png" alt="place holder"></figure>
+    </div>
+    <div class="media-content"></div>
+</article>
+</div>
+
+<% @tweeets.each do | tweet| %>
+    <div class="box">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-64x64"><img src="https://bulma.io/images/placeholders/64x64.png" alt=""></figure>
+            </div>
+            <div class="media-content">
+                <div class="content">
+                <strong>Alexis Sanchez</strong><br>
+                <small></small>@psialedev<br>
+                <p><%= tweet.tweet %></p>
+                </div>
+            </div>
+        </article>
+    </div>
+<% end %>

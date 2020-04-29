@@ -28,7 +28,11 @@
     }
 }
 
-.notifications:not(:last-child) {
+.box {
+    height: min-content;
+}
+
+.notification:not(:last-child) {
     margin-bottom: 0;
 }
 

@@ -12291,3 +12291,51 @@ Processing by TweeetsController#index as HTML
 Completed 200 OK in 35ms (Views: 32.5ms | ActiveRecord: 1.1ms | Allocations: 13005)
 
 
+Started GET "/" for ::1 at 2020-04-30 14:42:25 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tweeets/index.html.erb:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tweeets" WHERE "tweeets"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/views/tweeets/_profile.html.erb:25
+  Rendered tweeets/_profile.html.erb (Duration: 2.4ms | Allocations: 2580)
+  Rendered tweeets/_form.html.erb (Duration: 7.3ms | Allocations: 6016)
+  [1m[36mTweeet Load (0.1ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/_feed.html.erb:15
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  Rendered tweeets/_feed.html.erb (Duration: 11.1ms | Allocations: 9943)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/tweeets/_who-to-follow.html.erb:4
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 1.5ms | Allocations: 1117)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 24.4ms | Allocations: 21125)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 32.9ms | ActiveRecord: 0.7ms | Allocations: 31648)
+
+
+Started GET "/" for ::1 at 2020-04-30 14:42:54 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tweeets/index.html.erb:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tweeets" WHERE "tweeets"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/views/tweeets/_profile.html.erb:25
+  Rendered tweeets/_profile.html.erb (Duration: 12.9ms | Allocations: 4283)
+  Rendered tweeets/_form.html.erb (Duration: 35.6ms | Allocations: 12196)
+  [1m[36mTweeet Load (0.2ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/_feed.html.erb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  Rendered tweeets/_feed.html.erb (Duration: 57.4ms | Allocations: 16447)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/tweeets/_who-to-follow.html.erb:4
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 2.3ms | Allocations: 1137)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 92.6ms | Allocations: 30660)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 133ms (Views: 118.7ms | ActiveRecord: 2.1ms | Allocations: 50178)
+
+

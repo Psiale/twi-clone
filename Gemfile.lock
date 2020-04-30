@@ -58,12 +58,6 @@ GEM
       zeitwerk (~> 2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-<<<<<<< HEAD
-    bindex (0.8.1)
-    bootsnap (1.4.6)
-      msgpack (~> 1.0)
-    builder (3.2.4)
-=======
     bcrypt (3.1.13)
     better_errors (2.7.0)
       coderay (>= 1.0.0)
@@ -77,7 +71,6 @@ GEM
     builder (3.2.4)
     bulma-rails (0.8.0)
       sassc (~> 2.0)
->>>>>>> c541c08d93d709b0d0e1c2e41ba7c23ae8123b31
     byebug (11.0.1)
     capybara (3.32.1)
       addressable
@@ -88,10 +81,6 @@ GEM
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
     childprocess (3.0.0)
-<<<<<<< HEAD
-    concurrent-ruby (1.1.6)
-    crass (1.0.6)
-=======
     coderay (1.1.2)
     concurrent-ruby (1.1.6)
     crass (1.0.6)
@@ -102,15 +91,11 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
->>>>>>> c541c08d93d709b0d0e1c2e41ba7c23ae8123b31
     erubi (1.9.0)
     ffi (1.12.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-<<<<<<< HEAD
-=======
     gravatar_image_tag (1.2.0)
->>>>>>> c541c08d93d709b0d0e1c2e41ba7c23ae8123b31
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.0)
@@ -135,10 +120,7 @@ GEM
     nio4r (2.5.2)
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
-<<<<<<< HEAD
-=======
     orm_adapter (0.5.0)
->>>>>>> c541c08d93d709b0d0e1c2e41ba7c23ae8123b31
     pg (1.1.4)
     public_suffix (4.0.4)
     puma (4.3.3)
@@ -175,16 +157,13 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.20.3, < 2.0)
     rake (13.0.1)
-    rb-fsevent (0.10.3)
+    rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     regexp_parser (1.7.0)
-<<<<<<< HEAD
-=======
     responders (3.0.0)
       actionpack (>= 5.0)
       railties (>= 5.0)
->>>>>>> c541c08d93d709b0d0e1c2e41ba7c23ae8123b31
     ruby_dep (1.5.0)
     rubyzip (2.3.0)
     sass-rails (6.0.0)
@@ -200,12 +179,9 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
-<<<<<<< HEAD
-=======
     simple_form (5.0.2)
       actionpack (>= 5.0)
       activemodel (>= 5.0)
->>>>>>> c541c08d93d709b0d0e1c2e41ba7c23ae8123b31
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -226,11 +202,8 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
-<<<<<<< HEAD
-=======
     warden (1.2.8)
       rack (>= 2.0.6)
->>>>>>> c541c08d93d709b0d0e1c2e41ba7c23ae8123b31
     web-console (4.0.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -255,11 +228,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-<<<<<<< HEAD
-  bootsnap (>= 1.4.2)
-  byebug (= 11.0.1)
-  capybara (>= 2.15)
-=======
   better_errors
   binding_of_caller
   bootsnap (>= 1.4.2)
@@ -268,7 +236,6 @@ DEPENDENCIES
   capybara (>= 2.15)
   devise
   gravatar_image_tag
->>>>>>> c541c08d93d709b0d0e1c2e41ba7c23ae8123b31
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
   pg (= 1.1.4)
@@ -276,10 +243,7 @@ DEPENDENCIES
   rails (~> 6.0.2, >= 6.0.2.2)
   sass-rails (>= 6)
   selenium-webdriver
-<<<<<<< HEAD
-=======
   simple_form
->>>>>>> c541c08d93d709b0d0e1c2e41ba7c23ae8123b31
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3 (= 1.4.1)

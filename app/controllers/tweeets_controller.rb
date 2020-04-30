@@ -5,6 +5,7 @@ class TweeetsController < ApplicationController
   # GET /tweeets.json
   def index
     @tweeets = Tweeet.all
+    @users = User.all
     @tweeet = Tweeet.new
   end
 
@@ -55,7 +56,7 @@ class TweeetsController < ApplicationController
   # DELETE /tweeets/1
   # DELETE /tweeets/1.json
   def destroy
-    @tweeet.destroy
+    @tweeet.destroy if user_signed_in?
     respond_to do |format|
       format.html { redirect_to tweeets_url, notice: 'Tweeet was successfully destroyed.' }
       format.json { head :no_content }

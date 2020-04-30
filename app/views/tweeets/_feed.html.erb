@@ -1,7 +1,11 @@
 <div class="column is-half">
     <article class="box">
         <div class="media-left">
-            <figure class="image is-64x64"><img src="https://bulma.io/images/placeholders/64x64.png" alt="place holder"></figure>
+        <% if user_signed_in? %>
+            <figure class="image is-64x64">
+                <%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.name)  %>
+            </figure>
+            <% end %>
         </div>
     <div class="media-content">
         <%= render "tweeets/form" %>
@@ -12,16 +16,19 @@
         <div class="box">
             <article class="media">
                 <div class="media-left">
-                    <figure class="image is-64x64"><img src="https://bulma.io/images/placeholders/64x64.png" alt=""></figure>
+                    <%= gravatar_image_tag(tweeet.user.email, size: 64, alt: tweeet.user.name)  %>
+
                 </div>
                  <div class="media-content">
                     <div class="content">
-                        <strong>Alexis Sanchez</strong><br>
-                        <small></small>@psialedev<br>
+                        <strong><%=tweeet.user.name  %></strong><br>
+                        <small></small>@<%=tweeet.user.username  %><br>
                     <p><%= tweeet.tweeet %></p>
                     </div>
 
+                    <% if user_signed_in? %>
                     <nav class="level">
+                    
                         <div class="level-left is-mobile">
                         <%= link_to tweeet, class: "level-item" do %>
                             <span class="icon"><i class="fa fa-link" aria-hidden ="true"></i></span>
@@ -35,6 +42,7 @@
                         <% end %>
                         </div>
                     </nav>
+                    <% end %>
                 </div>
             </article>
         </div>

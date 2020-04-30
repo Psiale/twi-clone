@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TwiClone</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-mutate-approach="sync"></script>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  
+  <% if flash[:notice] %>
+  
+  <div class="notification is-primary global-notification">
+  <p class="notice"><%= notice %></p></div> 
+  
+  <% end %>
+  
+  <% if flash[:alert]%>
+  
+  <div class="notification is-danger global-notification">
+    <p class="alert"><%= alert  %></p>
+  </div>
+  
+  <% end %>
+
+  <nav class="navbar is-info">
+    <div class="navbar-brand">
+  <%= link_to root_path, class: "navbar-item" do %>
+  <h1 class="title is-5">Twittter</h1>
+  <% end %>
+  <div class="navbar-burger burger" data-taget="navbarExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navbarExample" class="navbar-menu">
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field is-grouped">
+        <% if user_signed_in? %>
+            <p class="control">
+          <%= link_to current_user.name, edit_user_registration_path, class: 'button is-info'  %>
+            </p>
+
+            <p class="control">
+          <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'button is-info'  %>
+            </p>
+        <% else %>
+          <p class="control">
+          <%= link_to 'Sign up', new_user_registration_path, class: 'button is-info'  %>
+          </p>
+
+          <p>
+          <%= link_to 'Sign in', new_user_session_path, class: 'button is-info' %>
+          </p>
+
+          
+        <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </nav>
+
+    <%= yield %>
+  </body>
+</html>

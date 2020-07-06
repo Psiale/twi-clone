@@ -3,11 +3,15 @@
     <div class="columns is-desktop">
     <% if user_signed_in? %>
     <%= render 'profile' %>
+    <br>
     <% else %>
     <%= render 'trends' %>
+    <br>
     <% end %>
     <%= render 'feed' %>
+    <br>
     <%= render 'who-to-follow' %>
+    <br>
     </div>
   </div>
 </section>

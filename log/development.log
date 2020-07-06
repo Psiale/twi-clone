@@ -13628,3 +13628,437 @@ Processing by TweeetsController#index as HTML
 Completed 200 OK in 56ms (Views: 51.3ms | ActiveRecord: 1.2ms | Allocations: 17160)
 
 
+Started GET "/" for ::1 at 2020-07-06 17:08:32 -0500
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (Duration: 16.4ms | Allocations: 100)
+  Rendered tweeets/_form.html.erb (Duration: 26.7ms | Allocations: 12376)
+  [1m[36mTweeet Load (0.3ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/_feed.html.erb:15
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  Rendered tweeets/_feed.html.erb (Duration: 94.5ms | Allocations: 27503)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/tweeets/_who-to-follow.html.erb:4
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 10.9ms | Allocations: 1660)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 132.2ms | Allocations: 31015)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 219ms (Views: 180.4ms | ActiveRecord: 4.3ms | Allocations: 48256)
+
+
+Started GET "/" for ::1 at 2020-07-06 17:08:41 -0500
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (Duration: 0.4ms | Allocations: 90)
+  Rendered tweeets/_form.html.erb (Duration: 7.0ms | Allocations: 3880)
+  [1m[36mTweeet Load (0.2ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/_feed.html.erb:15
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  Rendered tweeets/_feed.html.erb (Duration: 27.7ms | Allocations: 8512)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/tweeets/_who-to-follow.html.erb:4
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 4.6ms | Allocations: 1144)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 35.9ms | Allocations: 10652)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 44.9ms | ActiveRecord: 1.8ms | Allocations: 17181)
+
+
+Started GET "/" for ::1 at 2020-07-06 17:08:52 -0500
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (Duration: 0.3ms | Allocations: 90)
+  Rendered tweeets/_form.html.erb (Duration: 11.7ms | Allocations: 3878)
+  [1m[36mTweeet Load (0.3ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/_feed.html.erb:15
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  Rendered tweeets/_feed.html.erb (Duration: 26.5ms | Allocations: 8499)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/tweeets/_who-to-follow.html.erb:4
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 2.4ms | Allocations: 1144)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 32.1ms | Allocations: 10630)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 40.2ms | ActiveRecord: 1.3ms | Allocations: 17127)
+
+
+Started GET "/" for ::1 at 2020-07-06 17:09:14 -0500
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (Duration: 0.4ms | Allocations: 90)
+  Rendered tweeets/_form.html.erb (Duration: 10.0ms | Allocations: 3878)
+  [1m[36mTweeet Load (0.2ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/_feed.html.erb:15
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  Rendered tweeets/_feed.html.erb (Duration: 28.5ms | Allocations: 8509)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/tweeets/_who-to-follow.html.erb:4
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 2.2ms | Allocations: 1144)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 34.9ms | Allocations: 10641)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 45.6ms | ActiveRecord: 1.4ms | Allocations: 17152)
+
+
+Started GET "/" for ::1 at 2020-07-06 17:09:22 -0500
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (Duration: 1.1ms | Allocations: 89)
+  Rendered tweeets/_form.html.erb (Duration: 12.7ms | Allocations: 3878)
+  [1m[36mTweeet Load (0.2ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/_feed.html.erb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  Rendered tweeets/_feed.html.erb (Duration: 27.8ms | Allocations: 8509)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/tweeets/_who-to-follow.html.erb:4
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 5.8ms | Allocations: 1144)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 41.3ms | Allocations: 10640)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 55.5ms | ActiveRecord: 1.5ms | Allocations: 17155)
+
+
+Started GET "/" for ::1 at 2020-07-06 17:10:01 -0500
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (Duration: 0.4ms | Allocations: 90)
+  Rendered tweeets/_form.html.erb (Duration: 7.5ms | Allocations: 3878)
+  [1m[36mTweeet Load (0.2ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/_feed.html.erb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  Rendered tweeets/_feed.html.erb (Duration: 23.7ms | Allocations: 8499)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/tweeets/_who-to-follow.html.erb:4
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 2.9ms | Allocations: 1144)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 31.6ms | Allocations: 10630)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 43.7ms | ActiveRecord: 1.3ms | Allocations: 17133)
+
+
+Started GET "/" for ::1 at 2020-07-06 17:10:17 -0500
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (Duration: 0.4ms | Allocations: 90)
+  Rendered tweeets/_form.html.erb (Duration: 8.6ms | Allocations: 3878)
+  [1m[36mTweeet Load (0.2ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/_feed.html.erb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  Rendered tweeets/_feed.html.erb (Duration: 39.6ms | Allocations: 8511)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/tweeets/_who-to-follow.html.erb:4
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 3.2ms | Allocations: 1149)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 46.3ms | Allocations: 10649)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 63ms (Views: 60.2ms | ActiveRecord: 1.0ms | Allocations: 17164)
+
+
+Started GET "/" for ::1 at 2020-07-06 17:10:36 -0500
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (Duration: 0.5ms | Allocations: 90)
+  Rendered tweeets/_form.html.erb (Duration: 13.2ms | Allocations: 3880)
+  [1m[36mTweeet Load (0.3ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/_feed.html.erb:15
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  Rendered tweeets/_feed.html.erb (Duration: 30.3ms | Allocations: 8502)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/tweeets/_who-to-follow.html.erb:4
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 2.6ms | Allocations: 1145)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 36.8ms | Allocations: 10636)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 43.7ms | ActiveRecord: 1.4ms | Allocations: 17149)
+
+
+Started GET "/" for ::1 at 2020-07-06 17:10:52 -0500
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (Duration: 0.3ms | Allocations: 89)
+  Rendered tweeets/_form.html.erb (Duration: 7.0ms | Allocations: 3878)
+  [1m[36mTweeet Load (0.3ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/_feed.html.erb:15
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  Rendered tweeets/_feed.html.erb (Duration: 18.5ms | Allocations: 8499)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/tweeets/_who-to-follow.html.erb:4
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 3.6ms | Allocations: 1144)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 25.2ms | Allocations: 10629)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 33.0ms | ActiveRecord: 1.2ms | Allocations: 17126)
+
+
+Started GET "/" for ::1 at 2020-07-06 17:11:01 -0500
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (Duration: 0.4ms | Allocations: 90)
+  Rendered tweeets/_form.html.erb (Duration: 10.5ms | Allocations: 3878)
+  [1m[36mTweeet Load (0.1ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/_feed.html.erb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  Rendered tweeets/_feed.html.erb (Duration: 25.4ms | Allocations: 8499)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/tweeets/_who-to-follow.html.erb:4
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 3.0ms | Allocations: 1144)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 32.1ms | Allocations: 10630)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 43.1ms | ActiveRecord: 1.3ms | Allocations: 17133)
+
+
+Started GET "/" for ::1 at 2020-07-06 17:11:13 -0500
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (Duration: 0.4ms | Allocations: 90)
+  Rendered tweeets/_form.html.erb (Duration: 7.6ms | Allocations: 3878)
+  [1m[36mTweeet Load (0.2ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/_feed.html.erb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  Rendered tweeets/_feed.html.erb (Duration: 24.6ms | Allocations: 8499)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/tweeets/_who-to-follow.html.erb:4
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 2.9ms | Allocations: 1144)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 31.2ms | Allocations: 10630)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 41.2ms | ActiveRecord: 1.6ms | Allocations: 17131)
+
+
+Started GET "/" for ::1 at 2020-07-06 17:11:54 -0500
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (Duration: 0.5ms | Allocations: 90)
+  Rendered tweeets/_form.html.erb (Duration: 7.2ms | Allocations: 3878)
+  [1m[36mTweeet Load (0.2ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/_feed.html.erb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  Rendered tweeets/_feed.html.erb (Duration: 24.4ms | Allocations: 8499)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/tweeets/_who-to-follow.html.erb:4
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 4.2ms | Allocations: 1144)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 33.7ms | Allocations: 10630)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 47.9ms | ActiveRecord: 1.5ms | Allocations: 17123)
+
+
+Started GET "/" for ::1 at 2020-07-06 17:12:28 -0500
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (Duration: 0.4ms | Allocations: 89)
+  Rendered tweeets/_form.html.erb (Duration: 7.1ms | Allocations: 3882)
+  [1m[36mTweeet Load (0.3ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/_feed.html.erb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  Rendered tweeets/_feed.html.erb (Duration: 20.6ms | Allocations: 8505)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/tweeets/_who-to-follow.html.erb:4
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 3.8ms | Allocations: 1144)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 28.8ms | Allocations: 10643)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 38.0ms | ActiveRecord: 1.2ms | Allocations: 17148)
+
+
+Started GET "/" for ::1 at 2020-07-06 17:12:47 -0500
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (Duration: 0.5ms | Allocations: 89)
+  Rendered tweeets/_form.html.erb (Duration: 8.7ms | Allocations: 3878)
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/_feed.html.erb:15
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  Rendered tweeets/_feed.html.erb (Duration: 24.3ms | Allocations: 8500)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/tweeets/_who-to-follow.html.erb:4
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 2.6ms | Allocations: 1144)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 31.0ms | Allocations: 10630)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 40.6ms | ActiveRecord: 1.8ms | Allocations: 17135)
+
+
+Started GET "/" for ::1 at 2020-07-06 17:13:34 -0500
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (Duration: 0.5ms | Allocations: 89)
+  Rendered tweeets/_form.html.erb (Duration: 7.5ms | Allocations: 3880)
+  [1m[36mTweeet Load (0.2ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/_feed.html.erb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  Rendered tweeets/_feed.html.erb (Duration: 25.1ms | Allocations: 8501)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/tweeets/_who-to-follow.html.erb:4
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 2.9ms | Allocations: 1144)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 32.7ms | Allocations: 10631)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 45.0ms | ActiveRecord: 1.3ms | Allocations: 17134)
+
+
+Started GET "/" for ::1 at 2020-07-06 17:13:58 -0500
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (Duration: 0.5ms | Allocations: 89)
+  Rendered tweeets/_form.html.erb (Duration: 9.0ms | Allocations: 3881)
+  [1m[36mTweeet Load (0.2ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/_feed.html.erb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  Rendered tweeets/_feed.html.erb (Duration: 26.1ms | Allocations: 8502)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/tweeets/_who-to-follow.html.erb:4
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 2.3ms | Allocations: 1144)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 31.9ms | Allocations: 10632)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 42.7ms | ActiveRecord: 1.0ms | Allocations: 17135)
+
+
+Started GET "/" for ::1 at 2020-07-06 17:15:03 -0500
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (Duration: 0.4ms | Allocations: 89)
+  Rendered tweeets/_form.html.erb (Duration: 7.6ms | Allocations: 3880)
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/_feed.html.erb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  Rendered tweeets/_feed.html.erb (Duration: 26.1ms | Allocations: 8501)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/tweeets/_who-to-follow.html.erb:4
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 3.8ms | Allocations: 1146)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 34.7ms | Allocations: 10633)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 45.4ms | ActiveRecord: 1.4ms | Allocations: 17142)
+
+
+Started GET "/" for ::1 at 2020-07-06 17:15:30 -0500
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (Duration: 0.7ms | Allocations: 89)
+  Rendered tweeets/_form.html.erb (Duration: 26.3ms | Allocations: 3883)
+  [1m[36mTweeet Load (0.2ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/_feed.html.erb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:19
+  Rendered tweeets/_feed.html.erb (Duration: 42.0ms | Allocations: 8506)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/tweeets/_who-to-follow.html.erb:4
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 2.7ms | Allocations: 1151)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 48.8ms | Allocations: 10655)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 63ms (Views: 58.5ms | ActiveRecord: 1.2ms | Allocations: 17160)
+
+

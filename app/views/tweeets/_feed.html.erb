@@ -25,7 +25,7 @@
                         <small></small>@<%=tweeet.user.username  %><br>
                     <p><%= tweeet.tweeet %></p>
                     </div>
-
+                <% if user_signed_in? %>
                     <% if tweeet.user.username == current_user.username%>
                     <nav class="level">
                     
@@ -43,6 +43,8 @@
                         </div>
                     </nav>
                     <% end %>
+                <% end %>
+                
                 </div>
             </article>
         </div>
